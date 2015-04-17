@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+  network:
+  - ["public_network", {bridge: "ExternalNAT"}]
+
+driver_config:
+  box: windows-2012R2
+  communicator: winrm
+  vm_hostname: false
+  provider: hyperv
+
+provisioner:
+  name: shell
+
+platforms:
+  - name: windows-2012R2
+
+
+suites:
+  - name: default

@@ -1,0 +1,1 @@
+set-content -Path c:\test.txt -Value "kitchen rocks" -Force
