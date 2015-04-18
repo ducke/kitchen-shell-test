@@ -13,9 +13,11 @@ driver_config:
 provisioner:
   name: shell
 
+verifier:
+  name: pester
+
 platforms:
   - name: windows-2012R2
-
 
 suites:
   - name: default
